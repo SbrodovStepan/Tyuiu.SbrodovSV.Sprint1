@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.SbrodovSV.Sprint1.Task1.V24.Lib;
+using Tyuiu.SbrodovSV.Sprint1.Task2.V26.Lib;
 
-namespace Tyuiu.SbrodovSV.Sprint1.Task1.V24
+namespace Tyuiu.SbrodovSV.Sprint1.Task2.V26
 {
     class Program
     {
@@ -17,31 +17,32 @@ namespace Tyuiu.SbrodovSV.Sprint1.Task1.V24
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #24                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #26                                                             *");
             Console.WriteLine("* Выполнил: Сбродов Степан Владимирович | АСОиУб-23-2                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по форумле (1 - x) / (2 + y) и печатает его на экран*");
+            Console.WriteLine("* выполняет указанные расчёты и печатает результат на экране.             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x, y;
+            int x, y;
 
-            Console.WriteLine("Введите значение X:");
-            x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите количество часов (целое число):");
+            x = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите значение Y:");
-            y = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите количество минут (целое число):");
+            y = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.Calculate(x, y));
+            Console.WriteLine("Количество минут (целое число):");
+            Console.WriteLine(ds.CalculateMinutesSinceStart(x, y));
 
             Console.ReadKey();
         }
