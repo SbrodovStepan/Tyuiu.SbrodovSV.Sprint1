@@ -29,7 +29,7 @@ namespace Tyuiu.SbrodovSV.Sprint1.Task4.V29
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double x,y;
+            double x, y;
 
             Console.Write("Введите значение X: ");
             x = Convert.ToDouble(Console.ReadLine());
@@ -41,7 +41,7 @@ namespace Tyuiu.SbrodovSV.Sprint1.Task4.V29
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine($"Sqrt(2 + |x - 2 * y|) / (3 * x * y ^ 2) = {ds.Calculate(x,y)}");
+            Console.WriteLine($"Sqrt(2 + |x - 2 * y|) / (3 * x * y ^ 2) = {ds.Calculate(x, y)}");
 
             Console.ReadKey();
         }
