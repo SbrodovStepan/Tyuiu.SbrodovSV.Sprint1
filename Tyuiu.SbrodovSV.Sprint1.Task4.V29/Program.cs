@@ -11,7 +11,6 @@ namespace Tyuiu.SbrodovSV.Sprint1.Task4.V29
     {
         static void Main(string[] args)
         {
-
             DataService ds = new DataService();
 
             Console.Title = "Спринт #1 | Выполнил: Сбродов С. В. | АСОиУб-23-2";
@@ -45,7 +44,6 @@ namespace Tyuiu.SbrodovSV.Sprint1.Task4.V29
             Console.WriteLine($"Sqrt(2 + |x - 2 * y|) / (3 * x * y ^ 2) = {ds.Calculate(x, y)}");
 
             Console.ReadKey();
-
         }
     }
 }
